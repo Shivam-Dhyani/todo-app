@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  /* vh    - viewport height(height compared to the height of the device)
+     100vh - 100% of the decice height
+     50vh  - 50% of the decice height   
+  */
   min-height: 100vh;
+  background-color: #282c34;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  height: 80vh;
+  color: antiquewhite;
+  font-size: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Default value is row */
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 80%;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+button {
+  border: none;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.all-todos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.single-todo {
+  background-color: #5dadf8;
+  width: 450px;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-text {
+  /* flex -> specifies how much the item will grow or shrink relative to the rest of the flexible items 
+     flex: 1   -> covers 100% of the area, left after considering other items at same level
+     flex: 0.5 -> covers 50% of the area, left after considering other items at same level
+  */
+  flex: 1;
 }
