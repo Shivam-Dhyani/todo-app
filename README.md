@@ -1,6 +1,6 @@
 # ToDO App Build Using React Library 
 
-## Project Live -> [ToDO](https://shivam-dhyani-todo-app.netlify.app).
+## Project Live -> [ToDo App](https://shivam-dhyani-todo-app.netlify.app).
 
 
 ### UI of the APP
